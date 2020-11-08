@@ -1,0 +1,229 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0 auto;
+  min-height: 100%;
+  font-family: sofia-pro, sans-serif;
+  text-align: center;
+  color: #46424A;
+  position: relative;
+  padding-bottom: 60px;
+  padding-top: 3%;
+}
+
+header {
+  margin-bottom: 2%;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid black;
+  margin-top: 20px;
+}
+
+.responsive {
+  width: 100%;
+  max-width: 960px;
+  height: auto;
+}
+
+section {
+  max-width: 960px;
+  text-align: left;
+  margin: 3% auto;
+}
+
+h1 {
+  margin-top: 5%;
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
+  color: #2A4A41;
+}
+
+a {
+  text-decoration: none;
+  color: #46424A;
+}
+
+a:hover {
+  color: darkgoldenrod;
+}
+
+.active {
+  color: darkgoldenrod;
+}
+
+figcaption {
+  margin-bottom: 2%;
+}
+
+/* column styles */
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.col1 {
+  flex: 1;
+  margin: 2%;
+  height: 100%;
+}
+
+.col2 {
+  flex: 1;
+  margin: 2%;
+  height: 100%;
+}
+
+.col3 {
+  flex: 1;
+  margin: 2%;
+  height: 100%;
+}
+
+/*  Navigation  */
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: 120%;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.logo {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+}
+
+/* Hero  */
+#hero-image {
+  background-image: url(../images/trondheim.jpg);
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 5%;
+}
+
+#hero-text {
+  text-transform: uppercase;
+  font-size: 200%;
+  color: white;
+  padding: 10%;
+}
+
+#hero-text h1 {
+  color: white;
+}
+
+#hero-text a {
+  color: white;
+  padding: 1%;
+  border: 2px solid white;
+}
+
+#hero-text a:hover {
+  background: white;
+  color: dimgray;
+  border: 1px solid white;
+}
+
+/*  Testimonials  */
+#testimonials {
+  background: lightgrey;
+  padding: 1% 0 1% 0;
+  font-family: acumin-pro-condensed, sans-serif;
+  color: black;
+}
+
+#testimonials blockquote p {
+  text-align: left;
+  text-indent: none;
+  font-size: 120%;
+  font-weight: 400;
+}
+
+#testimonials h2 {
+  text-align: center;
+  color: #46424A;
+  font-family: sofia-pro, sans-serif;
+}
+
+#testimonials cite {
+  padding-left: 10%;
+}
+
+/* Tours */
+.tours {
+  text-align: justify;
+}
+
+.tours h2, .tours h3 {
+  color: #2A4A41;
+}
+
+.tours a {
+  padding: 2%;
+  color: white;
+  background: #2A4A41;
+  border: 1px solid #2A4A41;
+}
+
+.tours a:hover {
+  color: #2A4A41;
+  background: white;
+  border: 1px solid #2A4A41;
+}
+
+/*  Contact  */
+#contact h1, #contact h2, #contact section {
+  text-align: center;
+}
+
+/* ------------Mobile Styles---------- */
+@media only screen and (max-width: 800px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo {
+    max-width: 130px;
+    width: 100%;
+    height: auto;
+  }
+
+  #hero-text {
+    font-size: 150%;
+  }
+
+  h1, h2, h3 {
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .tours h2, .tours h3, .tours p {
+    text-align: justify;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
